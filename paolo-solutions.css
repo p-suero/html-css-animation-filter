@@ -1,0 +1,148 @@
+/* esercizio numero uno */
+.ex-1-square {
+    transition: background-color 1s;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+/* esercizio numero due */
+.ex-2-square {
+    transition: width 2.3s;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+/* esercizio numero tre */
+.ex-3-square {
+    transition: border-radius 1s;
+}
+
+.ex-3-square:hover {
+    border-radius: 50px;
+}
+
+/* esercizio numero quattro */
+.ex-4-square {
+    transition: opacity 1s;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+/* esercizio numero cinque */
+.ex-5-square {
+    transition: transform 1s;
+}
+
+.ex-5-square:hover {
+    transform: scale(2,2);
+}
+
+.ex-5-square:active {
+    transform: scale(0.5,0.5);
+}
+
+/* esercizio numero sei */
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+/* esercizio numero sette */
+.ex-7-img {
+    transition: filter 1.5s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(70%) sepia(50%);
+}
+
+/* esercizio numero otto */
+.ex-8-img {
+    transition: all 1.5s;
+}
+
+.ex-8-img:hover {
+    border-radius: 20px;
+    filter: sepia(80%) grayscale(30%);
+}
+
+/* esercizio numero nove */
+.ex-9-img {
+    transition: all 1.5s;
+}
+
+.ex-9-img:hover {
+    border-radius: 20px;
+    filter: sepia(60%) grayscale(30%);
+    transform: scale(1.5);
+}
+
+/* essrcizio numero dieci */
+.ex-10-icon {
+    animation-duration: 1s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0);}
+    to { transform: rotate(365deg);}
+}
+
+/* esercizio numero undici */
+.ex-11-icon:hover {
+    animation-name: hover-rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes hover-rotate {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(300deg);}
+    0% {transform: rotate(0);}
+}
+
+/* esercizio numero dodici */
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: position-top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes position-top {
+    0% {left: 10%;}
+    50% {left: calc( 100% - 60px);}
+    100% {left: 10%;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: position-bottom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes position-bottom {
+    0% {right: 20%;}
+    50% {right: calc( 100% - 60px);}
+    100% {right: 20%;}
+}
+
+/* esercizio numero tredici */
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: fullposition-top;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes fullposition-top {
+    0% {left: 10%;}
+    20% {left: calc(100% - 20px)}
+    50% {left: calc(100% - 20px); top:100%}
+}
