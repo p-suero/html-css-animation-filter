@@ -105,36 +105,37 @@
 
 @keyframes hover-rotate {
     0% {transform: rotate(0);}
-    50% {transform: rotate(300deg);}
-    0% {transform: rotate(0);}
+    80% {transform: rotate(300deg);}
+    100% {transform: rotate(0);}
 }
 
 /* esercizio numero dodici */
 .ex-12-button:hover .ex-12-top-white {
     animation-name: position-top;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-timing-function: linear;
 }
 
 @keyframes position-top {
     0% {left: 10%;}
-    50% {left: calc( 100% - 60px);}
+    50% {left: calc(100% - 60px);}
     100% {left: 10%;}
 }
 
 .ex-12-button:hover .ex-12-bottom-white {
     animation-name: position-bottom;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-timing-function: linear;
 }
 
 @keyframes position-bottom {
     0% {right: 20%;}
-    50% {right: calc( 100% - 60px);}
+    50% {right: calc(100% - 60px);}
     100% {right: 20%;}
 }
 
 /* esercizio numero tredici */
+/** ho posizionato il rettangolo in modo tale che il suo centro si allineato, il più possibile, con i bordi del container **/
 .ex-13-button:hover .ex-13-top-white {
     animation-name: fullposition-top;
     animation-duration: 3s;
@@ -142,7 +143,71 @@
 }
 
 @keyframes fullposition-top {
-    0% {left: 10%;}
-    20% {left: calc(100% - 20px)}
-    50% {left: calc(100% - 20px); top:100%}
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+
+    20% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+
+    40% {
+        left: calc(100% - 30px);
+        top: calc(100% - 10px);
+    }
+
+    60% {
+        left: -10px;
+        top: calc(100% - 10px);
+    }
+
+    80% {
+        left: -10px;
+        top: -10px;
+    }
+
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: fullposition-bottom;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes fullposition-bottom {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+
+    20% {
+        right: calc(100% - 45px);
+        bottom: -10px;
+    }
+
+    40% {
+        right: calc(100% - 45px);
+        bottom: calc(100% - 10px);
+    }
+
+    60% {
+        right: -30px;
+        bottom: calc(100% - 10px);
+    }
+
+    80% {
+        right: -30px;
+        bottom: -10px;
+    }
+
+    100% {
+        right: 20%;
+        bottom: -10px;
+    }
 }
